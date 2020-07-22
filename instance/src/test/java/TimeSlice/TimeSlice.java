@@ -40,7 +40,7 @@ public class TimeSlice {
     }
 
     public void printProcess(Process process){
-        System.out.printf("%10s%15s%15s%15s%15s%20s\n",process.name,process.arriveTime,
+        System.out.printf("%-10s%-15s%-15s%-15s%-15s%-20s\n",process.name,process.arriveTime,
                 process.serverTime,process.finishedTime,process.roundTime,process.weightTime);
     }
 
