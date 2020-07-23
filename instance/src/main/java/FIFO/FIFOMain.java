@@ -1,4 +1,4 @@
-package OPT;
+package FIFO;
 
 /**
  * @author Jianshu
@@ -6,7 +6,7 @@ package OPT;
  */
 import java.util.ArrayList;
 
-public class OPTMain {
+public class FIFOMain {
     public static void main(String[] args){
         ArrayList<Page> pageArrayList=new ArrayList<>();
 
@@ -14,11 +14,11 @@ public class OPTMain {
         for(int i=0;i<pageNums.length;i++){
             pageArrayList.add(new Page(pageNums[i]));
         }
-        OPT opt=new OPT(pageArrayList);
-        opt.opt();
-        System.out.println("\n命中次数：["+opt.hitNum+"]");
+        FIFO fifo=new FIFO(pageArrayList);
+        fifo.fifo();
+        System.out.println("\n命中次数：["+fifo.hitNum+"]");
 
-        double pageMiss=((double)pageNums.length-(double)opt.hitNum)/((double)pageNums.length);
-        System.out.println("\n缺页率：["+pageMiss*100+"%]");
+        double pageMiss=((double)pageNums.length-(double)fifo.hitNum)/((double)pageNums.length);
+        System.out.println("缺页率：["+pageMiss*100+"%]");
     }
 }

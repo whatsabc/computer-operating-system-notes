@@ -1,8 +1,8 @@
-package OPT;
+package LRU;
 
 /**
  * @author Jianshu
- * @time 20200722
+ * @time 20200723
  */
 import java.util.ArrayList;
 
@@ -25,10 +25,9 @@ public class Memory {
     }
 
     public void printMemory(){
-        System.out.println("\n---当前内存---");
+        System.out.println("\n--[内存]--");
         for(Page p:pages){
-            System.out.println(p.pageNum);
+            System.out.println(p.pageNum+"  计数器："+p.pageCount);
         }
     }
-
 }
