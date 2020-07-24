@@ -20,7 +20,7 @@ public class FCFSMain {
         processDeque.add(new Process("E",4f,4f));
 
         FCFS fcfs=new FCFS(processDeque);
-        System.out.printf("%-10s%-15s%-15s%-15s%-15s%-20s\n","进程名","到达时间", "服务时间","完成时间",
+        System.out.printf("%10s%10s%12s%12s%12s%15s\n","进程名","到达时间", "服务时间","完成时间",
                 "周转时间","带权周转时间");
         fcfs.fcfs();
 

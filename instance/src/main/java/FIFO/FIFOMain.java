@@ -8,6 +8,7 @@ import java.util.ArrayList;
 
 public class FIFOMain {
     public static void main(String[] args){
+
         ArrayList<Page> pageArrayList=new ArrayList<>();
 
         int[] pageNums=new int[]{7,0,1,2,0,3,0,4,2,3,0,3,2,1,2,0,1,7,0,1};
